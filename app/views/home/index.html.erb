@@ -1,0 +1,13 @@
+<h1>Welcome to Coin Changer!</h1>
+
+<h2>This site will correctly give you the perfect change for any amount.  So have fun and give it a try!<h2>
+
+<h3>Please place an amount in the form below:</h3>
+
+<%= form_tag home_index_path, :method => 'get' do %>
+  <p>
+    <%= number_field_tag :amount, params[:amount] %>
+    <%= submit_tag "Amount" %>
+  </p>
+  <% end %>
+<%= @changer %>
