@@ -2,7 +2,7 @@
 
 <h2>This site will correctly give you the perfect change for any amount.  So have fun and give it a try!<h2>
 
-<h3>Please place an amount in the form below:</h3>
+<h3>Please place an amount in the form below(all amounts are = 1 cent):</h3>
 
 <%= form_tag home_index_path, :method => 'get' do %>
   <p>
@@ -10,4 +10,4 @@
     <%= submit_tag "Amount" %>
   </p>
   <% end %>
-<%= @changer %>
+<h3>Here is your correct change:</h3><%= @changer %>
